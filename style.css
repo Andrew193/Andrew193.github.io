@@ -1,0 +1,695 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    max-width: 1600px;
+    background-color: white;
+}
+.gridContent{
+    display: grid;
+    grid-template-areas: 
+    'headerContacts'
+    'mainNav'
+    'headerMainLogo'
+    'aboutUs'
+    'ourSearvice'
+    'whyWe'
+    'pruv'
+    'ourProjects'
+    'coms'
+    'blog'
+    'getFree'
+    'footer';
+    grid-template-rows: 50px 120px 800px 987px 938px 350px 
+    750px 950px 850px 880px 720px 700px;
+}
+/*slaves*/
+.f{
+    background-color: gray;
+    padding:10px 15px 10px 15px;
+    border-radius: 50%;
+}
+.pink{
+    width: 448px;
+    height: 375px;
+    background-color: #fce5c3;
+    position: absolute;
+    left: 50%;
+    padding: 45px;
+    color: black;
+    top: 0;
+}
+.orange{
+    background-color: rgb(255, 187, 0);
+    width: 524px;
+    height: 120px;
+    position: absolute;
+    top: 68%;
+    left: 49%;
+    padding-left: 30px;
+    color: white;
+}
+.blue{
+    width: 492px;
+    height: 375px;
+    background-color: #1175b7;
+    position: absolute;
+    top: 20%;
+    left: 49%;
+    padding: 31px;
+    color: white;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.blue p{
+    font-size: 20px;
+}
+.blue h1{
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+button{
+    cursor: pointer;
+}
+.socnet{
+    position: absolute;
+}
+.socnet img{
+    padding-left: 20px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex p{
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.stab{
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.clock{
+    background-color: white; 
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+.request{
+    background-color: rgb(255, 187, 0);
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+/*Header*/
+.mainLogoText{
+    position: absolute;
+    text-align: center;
+}
+.mainLogoText p{
+    font-size: 80px;
+}
+.mainLogoText h1{
+    opacity: 0.7;
+}
+.mainNav{
+    grid-area: mainNav;
+}
+.nav{
+    list-style-type: none;
+}
+.nav a{
+    text-decoration: none;
+    color: #1175b7;
+    padding-right: 30px;
+}
+.nav li{
+    display: inline;
+}
+.mainTitle {
+    color: #1175b7;
+    padding-right: 120px;
+}
+.headerContacts{
+     position: relative;
+    grid-area: headerContacts;
+    background-color: #1175b7;
+    font-size: 16px;
+    color: white;
+}
+.fixBack{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.headerMainLogo{
+    grid-area: headerMainLogo;
+    background: url(../работа3/img/mainHeaderBack.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/*aboutUs*/
+.aboutUs{
+    grid-area: aboutUs;
+    position: relative;
+}
+.aboutP{
+    position: relative;
+    padding: 0px 0px 20px 0px;
+}
+.aboutP::before{
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    content: '';
+    background-color: rgb(255, 187, 0);
+    top: -5px;
+}
+/*ourSearvice*/
+.arrowRight{
+    cursor: pointer;
+    transform: rotate(45deg);
+    border-right: 1px solid #1175b7;
+    border-top: 1px solid #1175b7;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 13px;
+    left: 17px;
+}
+.arrowR{
+    text-align: center;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 1366px;
+    top: 58%;
+    position:absolute;
+}
+.arrowL{
+    text-align: center;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 190px;
+    top: 58%;
+    position:absolute;
+}
+.arrowLeft{
+    cursor: pointer;
+    transform: rotate(-45deg);
+    border-left: 1px solid #1175b7;
+    border-top: 1px solid #1175b7;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 13px;
+    left: 17px;
+}
+.ourSearvice{
+    justify-content: center;
+    grid-area: ourSearvice;
+    background-color: #f9f5f2;
+    position: relative;
+}
+.ourText{
+    top: 16%;
+    position: absolute;
+    text-align: center;
+}
+.gallary {
+    position: absolute;
+    left: 250px;
+    top: 30%;
+    width:1100px;
+}
+.content2{
+    padding-top: 250px;
+    width: 350px;
+    color: gray;
+    text-align: center;
+}
+.content2 h1{
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.content2 p{
+    padding: 0;
+}
+.q{
+    margin-right: 28px;
+}
+.q1{
+    background: url(../работа3/img/gallery-1.png) no-repeat;
+    background-color: white;
+}
+.q2{
+    background: url(../работа3/img/gallery-2.png) no-repeat;
+    background-color: white;
+}
+.q3{
+    background: url(../работа3/img/image-3.png) no-repeat;
+    background-color: white;
+}
+/*whyWe*/
+.whyWe{
+    background-color: #038fd6;
+    grid-area: whyWe;
+    text-align: center;
+    color: white;
+}
+.weitem{
+    
+    width: 25%;
+    position: relative;
+}
+.true::after{
+
+    position: absolute;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 1px;
+    opacity: 0.5;
+    background-color: white;
+    top: 0;
+}
+.weitem p{
+    padding: 0;
+}
+/*pruv*/
+.pruv{
+    grid-area: pruv;
+}
+.pruvContent{
+    height: 630px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+.mainPruv h3::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    background-color:rgb(255, 187, 0);
+    height: 2px;
+    top: -15px;
+}
+.pruvBtn{
+    padding: 22px 30px 22px 30px;
+    top: 83%;
+    position: absolute;
+    text-align: left;
+    font-size: 27px;
+}
+.mainPruv h3{
+    color:  #038fd6;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 35px;
+}
+.mainPruv h1{
+    font-size: 47px;
+    color:  #038fd6;
+    margin-bottom: 70px;
+}
+.pruvList{
+    list-style-type: none;
+    list-style-position: outside;
+}
+.pruvList li::before{
+    content: url(../работа3/img/listc.png);
+    position: relative;
+    right: 15px;
+}
+.pruvList li{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+/*ourProjects*/
+.ourProjects{
+    grid-area: ourProjects;
+    justify-content: center;
+    flex-direction: column;
+}
+.ourpHeader{
+    width: 550px;
+    text-align: center;
+}
+.ourpHeader h1{
+    font-size: 30px;
+}
+.ourpHeader h3{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 19px;
+    color: #d2d2d2;
+    position: relative;
+}
+.ourpHeader h3::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(255, 187, 0);
+    left: 47%;
+    top: 117%;
+}
+.ourpNav li{
+    display: inline-block;
+    cursor: pointer;
+    padding:10px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all ease 0.2s;
+}
+.ourpNav li:hover{
+    background-color: rgb(255, 187, 0);
+    color: white;
+}
+.ourpNav{
+    list-style-type: none;
+}
+.ourpGallary{
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.ourpGallary img{
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+.ourpGallary .ext{
+    margin-right: 0px;
+}
+/*coms*/
+.coms{
+    grid-area: coms;
+    position: relative;
+    background: url(../работа3/img/back.png) no-repeat top;
+}
+.back{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height:  79%;
+}
+.content{
+    color: white;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    margin-top: 130px;
+}
+.content h1{
+    font-size: 40px;
+}
+.content button{
+    color: rgb(255, 187, 0);
+    border: none;
+    padding: 20px 50px 20px 50px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 16px;
+}
+.comments{
+    height: 470px;
+    width: 100%;
+    margin-top: 71px;
+    background-color: #1175b7;
+    justify-content: center;
+    flex-direction: column;
+}
+.imgs{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.col{
+    flex-direction: column;
+    position: relative;
+    top: 4%;
+}
+.com{
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.com p{
+    font-size: 30px;
+}
+.com img{
+    left: 42%;
+    z-index: 1;
+    position: absolute;
+}
+.bottom{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    top: 7%;
+    z-index: 2000;
+}
+.data{
+    position: absolute;
+    z-index: 999;
+    left: 95%;
+}
+.cub{
+    background-color: white;
+    padding: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+/*blog*/
+.blog{
+    grid-area: blog;
+    justify-content: center;
+    flex-direction: column;
+}
+.blogContent{
+    width: 100%;
+    min-height: 560px;
+}
+.blogContent h5{
+    margin-top: 10px;
+}
+.leftContent{
+    position: relative;
+    width: 53%;
+    height: 100%;
+}
+.leftContent h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.blogHeader{
+    width: 550px;
+    text-align: center;
+}
+.blogHeader h1{
+    font-size: 30px;
+}
+.labelinfo{
+    margin-bottom: 5%;
+}
+.label{
+    background-color: rgb(255, 187, 0);
+    position: absolute;
+    top: 5%;
+    color: white;
+    padding: 5px;
+}
+.blogHeader h3{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 19px;
+    color: #d2d2d2;
+    position: relative;
+}
+.blogHeader h3::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(255, 187, 0);
+    left: 47%;
+    top: 117%;
+}
+.rightContent{
+    position: relative;
+    width: 53%;
+    height: 100%;
+    padding-left: 40px;
+}
+
+/*getFree*/
+.getFree{
+    grid-area: getFree;
+    position: relative;
+}
+.pink p{
+    padding: 0;
+}
+.pink h1{
+    font-size: 43px;
+    margin-bottom: 10px;
+
+}
+.pink h2{
+    font-size: 18px;
+    position: relative;
+}
+.pink h2::before{
+   top: -10px;
+   content: '';
+   display: block;
+   position: absolute;
+   width: 30px;
+   height: 2px;
+   background-color: rgb(255, 187, 0);
+}
+.freeBtn{
+    top: 83%;
+    padding: 15px 30px;
+}
+.freeform input{
+    width: 95%;
+    margin-top: 20px;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.freeorange{ 
+    background-color: rgb(255, 187, 0);
+    width: 510px;
+    height: 93px;
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    padding-left: 30px;
+    color: white;
+}
+.freeform input::placeholder{
+    color: black;
+    padding-left: 30px;
+}
+
+/*footer*/
+.footer{
+    grid-area: footer;
+    position: relative;
+    background:url(../работа3/img/Rectangle\ 13.png) no-repeat bottom;
+}
+.footerHeader{
+    height: 120px;
+    justify-content: space-between;
+    background-color: #1175b7;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.footerMain h1{
+    font-size: 22px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.fmitem{
+    height: 480px;
+    color: white;
+    width: 34%;
+    padding-right: 30px;
+    border-bottom: 1px solid white;
+}
+.fmitem p{
+    padding: 0;
+}
+.footerMain h1::after{
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: -40%;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(255, 187, 0);
+}
+.flogos{
+    margin-top: 30px;
+}
+.flogos img{
+    margin-right: 10px;
+    transition: all ease 0.2s;
+}
+.flogos img:hover{
+    background-color: red;
+}
+.flogos .t{
+    background-color: gray;
+    padding:13px;
+    border-radius: 50%;
+}
+.fmitem input{
+    border: 1px solid rgb(255, 187, 0);
+    height: 37px;
+    margin-top: 53px;
+}
+.fmitem input::placeholder{
+    color: black;
+    padding-left: 20px;
+}
+.fli p{
+    margin-bottom: 15px;
+}
+.fri p{
+    margin-bottom: 15px;
+}
+.fri{
+    margin-top: 19%;
+}
+.footerNav{
+   list-style-type: none;
+}
+.telegram{
+    padding: 10px;
+    background-color: rgb(255, 187, 0);
+}
+.end{
+    color: white;
+    padding-top: 3%;
+}
+.end h1{
+    margin-right:80px;
+}
+.end p{
+    padding: 0;
+}
+.top{
+    background-color: rgb(255, 187, 0);
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+    top: 90%;
+    left: 94%;
+}
