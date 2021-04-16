@@ -152,7 +152,7 @@ button{
 }
 .headerMainLogo{
     grid-area: headerMainLogo;
-    background: url(../работа3/img/mainHeaderBack.png);
+    background: url(./img/mainHeaderBack.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -256,15 +256,15 @@ button{
     margin-right: 28px;
 }
 .q1{
-    background: url(../работа3/img/gallery-1.png) no-repeat;
+    background: url(./img/gallery-1.png) no-repeat;
     background-color: white;
 }
 .q2{
-    background: url(../работа3/img/gallery-2.png) no-repeat;
+    background: url(./img/gallery-2.png) no-repeat;
     background-color: white;
 }
 .q3{
-    background: url(../работа3/img/image-3.png) no-repeat;
+    background: url(./img/image-3.png) no-repeat;
     background-color: white;
 }
 /*whyWe*/
@@ -336,7 +336,7 @@ button{
     list-style-position: outside;
 }
 .pruvList li::before{
-    content: url(../работа3/img/listc.png);
+    content: url(./img/listc.png);
     position: relative;
     right: 15px;
 }
@@ -405,7 +405,7 @@ button{
 .coms{
     grid-area: coms;
     position: relative;
-    background: url(../работа3/img/back.png) no-repeat top;
+    background: url(./img/back.png) no-repeat top;
 }
 .back{
     position: absolute;
@@ -602,7 +602,7 @@ button{
 .footer{
     grid-area: footer;
     position: relative;
-    background:url(../работа3/img/Rectangle\ 13.png) no-repeat bottom;
+    background:url(./img/Rectangle\ 13.png) no-repeat bottom;
 }
 .footerHeader{
     height: 120px;
