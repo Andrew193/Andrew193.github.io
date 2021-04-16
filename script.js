@@ -77,9 +77,9 @@ document.querySelector('.arrowR').addEventListener('click',function(event) {
 })
 
 let g2ps=0;
-let items=['file:///C:/html/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B03/img/coment1.png',
-'file:///C:/html/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B03/img/coment2.png',
-'file:///C:/html/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B03/img/coment3.png']
+let items=['./img/coment1.png',
+'./img/coment2.png',
+'./img/coment3.png']
 document.querySelector('.l').addEventListener("click",function(event) {
         if(g2ps!=0) {
             g2ps-=1
